@@ -5,4 +5,4 @@ n1 = int(input('Informe o primeiro número: '))
 n2 = int(input('Informe o segundo número: '))
 soma = n1 + n2
 
-print('O resultado da soma é:', soma)
+print('O resultado da soma entre {} e {} é {}.'.format(n1, n2, soma))
