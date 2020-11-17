@@ -10,7 +10,7 @@ ano = date.today().year
 
 for c in range(0, 7):
     nasc = int(input('Qual o ano que a pessoa {} nasceu? '.format(c + 1)))
-    if ano - nasc >= 18:
+    if ano - nasc >= 21:
         maior += 1
     else:
         menor += 1
