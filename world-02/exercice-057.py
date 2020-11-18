@@ -5,7 +5,7 @@
 c = True
 
 while c!= False:
-    sexo = str(input('Qual é o seu sexo [M/F]? '))
+    sexo = str(input('Qual é o seu sexo [M/F]? ')).upper()
 
     if sexo not in 'MF':
         print('Valor inválido!')
