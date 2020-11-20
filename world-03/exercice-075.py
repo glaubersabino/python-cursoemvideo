@@ -14,8 +14,10 @@ while count < 4:
     t = t + (n,)
     count += 1
 
+findThree = t.index(3) if 3 in t else 'inexistente'
+
 print(f'''
 => O número 9 apareceu {t.count(9)} vezes.
-=> A primeira posição do número 3 foi {t.index(3)}.
+=> 3 apareceu na posição {findThree}.
 => Os números pares digitados foram {par}.
 ''')
