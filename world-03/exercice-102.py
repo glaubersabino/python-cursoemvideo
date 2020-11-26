@@ -1,0 +1,22 @@
+# Exercício 102
+# Crie um programa que tenha uma função fatorial() que receba dois parâmetros:
+# o primeiro que indique o número a calcular e outro chamado show, que será um valor lógico (opcional)
+# indicando se será mostrado ou não na tela o processo de cálculo do fatorial.
+
+def fatorial(value, show=False):
+    f = 0
+    counter = 0
+    for c in range(value, 0, -1):
+        if counter == 0:
+            f = c
+        else:
+            f *= c
+        counter += 1
+        if show:
+            print(c, end=' ')
+            print('x' if c != 1 else '=', end=' ')
+    print(f)
+
+
+fatorial(5, True)
+fatorial(5)
