@@ -5,7 +5,7 @@
 def leiaInt(text):
     n = input(text)
     while not n.isnumeric():
-        print('=> ERRO! Informe um número inteiro.')
+        print('\033[0;31m=> ERRO! Informe um número inteiro.\033[m')
         n = input(text)
     return n
 
